@@ -1,0 +1,145 @@
+% Enable hyperlinks
+\setupinteraction
+  [state=start,
+  style=,
+  color=,
+  contrastcolor=]
+
+% make chapter, section bookmarks visible when opening document
+\placebookmarks[chapter, section, subsection, subsubsection, subsubsubsection, subsubsubsubsection][chapter, section]
+\setupinteractionscreen[option=bookmark]
+\setuptagging[state=start]
+
+\setuppapersize[A4]
+
+% use microtypography
+\definefontfeature[default][default][script=latn, protrusion=quality, expansion=quality, itlc=yes, textitalics=yes, onum=yes, pnum=yes]
+\definefontfeature[smallcaps][script=latn, protrusion=quality, expansion=quality, smcp=yes, onum=yes, pnum=yes]
+\setupalign[hz,hanging]
+\setupitaliccorrection[global, always]
+
+\setupbodyfontenvironment[default][em=italic] % use italic as em, not slanted
+
+\definefallbackfamily[mainface][rm][DejaVu Serif][preset=range:greek, force=yes]
+\definefontfamily[mainface][rm][Latin Modern Roman]
+\definefontfamily[mainface][mm][Latin Modern Math]
+\definefontfamily[mainface][ss][Latin Modern Sans]
+\definefontfamily[mainface][tt][Latin Modern Typewriter][features=none]
+\setupbodyfont[mainface]
+
+\setupwhitespace[medium]
+
+\setuphead[chapter]            [style=\tfd,header=empty]
+\setuphead[section]            [style=\tfc]
+\setuphead[subsection]         [style=\tfb]
+\setuphead[subsubsection]      [style=\bf]
+\setuphead[subsubsubsection]   [style=\sc]
+\setuphead[subsubsubsubsection][style=\it]
+
+\setuphead[chapter, section, subsection, subsubsection, subsubsubsection, subsubsubsubsection][number=no]
+
+\definedescription
+  [description]
+  [headstyle=bold, style=normal, location=hanging, width=broad, margin=1cm, alternative=hanging]
+
+\setupitemize[autointro]    % prevent orphan list intro
+\setupitemize[indentnext=no]
+
+\setupfloat[figure][default={here,nonumber}]
+\setupfloat[table][default={here,nonumber}]
+
+\setupthinrules[width=15em] % width of horizontal rules
+
+\setupxtable[frame=off]
+\setupxtable[head][topframe=on,bottomframe=on]
+\setupxtable[body][]
+\setupxtable[foot][bottomframe=on]
+
+
+\starttext
+
+\section[title={Jessica Gu},reference={jessica-gu}]
+
+\subsubsection[title={\useURL[url1][mailto:the.jessica.c.gu@gmail.com\%20class=link][][the.jessica.c.gu@gmail.com]\from[url1]
+•
+\useURL[url2][https://github.com/fluffydoggo\%20class=link][][fluffydoggo]\from[url2]
+•
+858.429.8899},reference={the.jessica.c.gugmail.comemail-fluffydoggogithub-858.429.8899}]
+
+\subsection[title={Summary},reference={summary}]
+
+Software Engineer, working at Google, graduated from UC Berkeley,
+interested in solving challenging problems
+
+\subsection[title={Education},reference={education}]
+
+\subsubsection[title={UC Berkeley, B.A Computer
+Science},reference={uc-berkeley-b.a-computer-science}]
+
+\startitemize[packed]
+\item
+  GPA: 3.6
+\item
+  Relevant Coursework: Compilers, Operating Systems, Database,
+  Algorithms, Data Structures
+\stopitemize
+
+\subsection[title={Work Experience},reference={work-experience}]
+
+\subsubsection[title={Google, Software Engineer, Tools and
+Infrastructue},reference={google-software-engineer-tools-and-infrastructue}]
+
+\startitemize
+\item
+  Designed and implemented automatic deployment and notifications of
+  releases onto a staging environment
+\item
+  Led effort to develop specialized E2E test framework ** Created a
+  Selenium Web Page Library tailored to product's frontend ** Create
+  Diff Framework with library to drive traffic to product's backend
+\stopitemize
+
+\subsubsection[title={UC Berkeley, Teaching
+Assisstant},reference={uc-berkeley-teaching-assisstant}]
+
+\startitemize[packed]
+\item
+  Guided students through the techniques and foundations of computer
+  science
+\item
+  Developed discussion material and organized class logistics.
+\stopitemize
+
+\subsection[title={Selected Projects},reference={selected-projects}]
+
+\subsubsection[title={Python Compiler},reference={python-compiler}]
+
+\startitemize[packed]
+\item
+  Created a compiler for a staticly typed dialect of Python 2.5
+\stopitemize
+
+\subsubsection[title={Pintos Operating
+System},reference={pintos-operating-system}]
+
+\startitemize[packed]
+\item
+  Added features onto a basic operating system: thread synchronization,
+  command-line argument parsing, file system calls.
+\stopitemize
+
+\subsubsection[title={Key-Value Store},reference={key-value-store}]
+
+\startitemize[packed]
+\item
+  Wrote a distributed key-value store that uses 2-phase commits to
+  enforce data consistency.
+\stopitemize
+
+\subsection[title={Skills},reference={skills}]
+
+\subsubsection[title={Languages},reference={languages}]
+
+Python, C++ \#\#\# Technology Vim, Tmux, Git
+
+\stoptext
