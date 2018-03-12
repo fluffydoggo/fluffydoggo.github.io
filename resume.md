@@ -1,8 +1,7 @@
 # Jessica Gu
 
-### [the.jessica.c.gu@gmail.com][email] &bull; [fluffydoggo][github] &bull; 858.429.8899
+### [the.jessica.c.gu@gmail.com](mailto:the.jessica.c.gu@gmail.com class=link) &bull; [fluffydoggo][github] &bull; 858.429.8899
 
-[email]: mailto:the.jessica.c.gu@gmail.com class=link
 [github]: https://github.com/fluffydoggo class=link
 [site]: https://fluffydoggo.github.io class=link
 
