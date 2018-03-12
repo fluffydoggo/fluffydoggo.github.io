@@ -37,7 +37,7 @@ Software Engineer, working at Google, graduated from UC Berkeley, interested in 
 
 ### Pintos Operating System
 
-* Implemented a basic operating system with thread synchronization, command-line argument parsing and file system calls.
+* Added features onto a basic operating system: thread synchronization, command-line argument parsing, file system calls.
  
 ### Key-Value Store
 
