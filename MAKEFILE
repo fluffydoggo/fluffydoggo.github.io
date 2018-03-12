@@ -1,0 +1,5 @@
+all: resume_pdf
+
+resume_pdf:
+	pandoc --standalone --from markdown --to context -V papersize=letter -o resume.tex resume.md	
+	context resume.tex resume.pdf

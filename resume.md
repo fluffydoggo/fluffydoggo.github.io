@@ -21,7 +21,9 @@ Software Engineer, working at Google, graduated from UC Berkeley, interested in 
 * Designed and implemented automatic deployment and notifications of releases onto a staging environment 
 
 * Led effort to develop specialized E2E test framework
+
 ** Created a Selenium Web Page Library tailored to product's frontend
+
 ** Create Diff Framework with library to drive traffic to product's backend
 
 ### UC Berkeley, Teaching Assisstant
